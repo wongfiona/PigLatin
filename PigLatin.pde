@@ -30,7 +30,7 @@ public String pigLatin(String sWord)
 	{
 		return sWord + "ay";
 	}
-	else if (sWord.charAt(0) == 'a' || sWord.charAt(0) == 'e' || sWord.charAt(0) == 'i' || sWord.charAt(0) == 'o' || sWord.charAt(0) == 'u')
+	else if (findFirstVowel(sWord) == 0)
 	{
 		return sWord + "way";
 	}
